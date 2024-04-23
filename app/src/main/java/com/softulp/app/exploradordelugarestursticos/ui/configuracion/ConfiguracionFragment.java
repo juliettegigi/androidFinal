@@ -27,7 +27,6 @@ public class ConfiguracionFragment extends Fragment {
 
     private FragmentConfiguracionBinding binding;
     private ConfiguracionViewModel vm;
-    private  MapsViewModel vm2;
 
     private TextView textViewSeleccionado;
     private Intent intent;
@@ -35,7 +34,6 @@ public class ConfiguracionFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         vm = new ViewModelProvider(this).get(ConfiguracionViewModel.class);
-        vm2=new ViewModelProvider(requireActivity()).get(MapsViewModel.class);
         intent = new Intent("com.softulp.app.exploradordelugaresturisticos.configurarTipoMapa");
         binding = FragmentConfiguracionBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
@@ -125,7 +123,7 @@ public class ConfiguracionFragment extends Fragment {
             @Override
             public void onClick(View v) {
                   if (textViewSeleccionado != binding.tvHibrido)
-                  eventoClick(binding.tvHibrido,4);
+                    eventoClick(binding.tvHibrido,4);
 
             }
         });

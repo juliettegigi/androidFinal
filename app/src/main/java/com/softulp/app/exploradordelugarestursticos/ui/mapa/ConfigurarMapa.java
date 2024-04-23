@@ -3,14 +3,7 @@ package com.softulp.app.exploradordelugarestursticos.ui.mapa;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
-import android.util.Log;
-import android.widget.Toast;
 
-import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelStoreOwner;
-
-import com.google.android.gms.maps.GoogleMap;
 import com.softulp.app.exploradordelugarestursticos.MainActivity;
 
 public class ConfigurarMapa extends BroadcastReceiver {

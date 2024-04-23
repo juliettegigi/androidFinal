@@ -32,7 +32,6 @@ public class ConfiguracionViewModel extends AndroidViewModel {
     }
 
     public LiveData<Boolean> getMutableIdiomaEspanol(){
-        Log.d("salida ","En el get");
      if(mutableIdiomaEspanol==null) {
          mutableIdiomaEspanol = new MutableLiveData<>();
      }

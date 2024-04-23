@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
-    private  ConfigurarMapa cm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,4 +90,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }
