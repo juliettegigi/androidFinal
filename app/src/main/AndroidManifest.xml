@@ -34,6 +34,16 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="YOUR_API_KEY" />
 
+        <service
+            android:name=".ui.mapa.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".ui.mapa.ConfigurarMapa"
+            android:enabled="true"
+            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

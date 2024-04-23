@@ -6,15 +6,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_lugaresTuristicos"
-            android:title="Lugares turísticos" />
+            android:title="@string/lugares_tur_sticos" />
         <item
             android:id="@+id/nav_mapa"
-            android:title="Mapa" />
+            android:title="@string/mapa" />
         <item
             android:id="@+id/nav_configuracion"
-            android:title="Configuración" />
+            android:title="@string/configuraci_n"/>
         <item
             android:id="@+id/nav_salir"
-            android:title="Salir" />
+            android:title="@string/salir" />
     </group>
 </menu>

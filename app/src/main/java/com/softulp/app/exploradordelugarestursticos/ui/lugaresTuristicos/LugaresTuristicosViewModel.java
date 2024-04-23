@@ -59,6 +59,26 @@ public class LugaresTuristicosViewModel extends AndroidViewModel {
                 "Además de la Casa de Gobierno, el centro cívico está compuesto por cuatro edificios ministeriales: Proyección a Futuro (Tecnología), Estrategias (Desarrollo Estratégico), Conservador (Economía) y Capital (Recursos Humanos). El conjunto se cierra con una plaza pública y el Hito del Bicentenario, una torre de 125 metros de altura.");
         lista.add(lt);
 
+        lt= new LugarTuristico();
+        lt.setNombre("Cabildo");
+        lt.setDescripcion("En conmemoración del bicentenario, San Luis construyó en La Punta la réplica exacta del Cabildo Histórico, símbolo por excelencia de la Revolución de Mayo de 1810. Está destinado a actividades recreativas, turísticas, culturales, pedagógicas y de interés histórico. Ofrece visitas guiadas para escuelas, turistas y residentes.");
+        lt.setFotos(new ArrayList<>(Arrays.asList(R.drawable.cabildo1,R.drawable.cabildo2)));
+        lt.setMasInfo(" La entrada general tiene un arancel de $50 pesos y se puede visitar todos los días.\nEn conmemoración del bicentenario, San Luis construyó en La Punta la réplica exacta del Cabildo Histórico, símbolo por excelencia de la Revolución de Mayo de 1810. Está destinado a actividades recreativas, turísticas, culturales, pedagógicas y de interés histórico. Ofrece visitas guiadas para escuelas, turistas y residentes.\n" +
+                "\n" +
+                "También se puede visitar la réplica de la Pirámide de Mayo, del primer aniversario del 25 de Mayo, en 1811. Para consulta por turnos para visitas guiadas de establecimientos educativos se pueden comunicar a la Autopista de la Información, al teléfono 4452010 int. 8983 – 8934");
+        lt.setHorarios("8:00 a 20:00");
+        lista.add(lt);
+
+        lt= new LugarTuristico();
+        lt.setNombre("Potrero de los funes");
+        lt.setDescripcion("El Potrero de los Funes es una localidad de la Provincia de San Luis, Argentina1. Es un hermoso espacio verde de flora autóctona y exótica que cuenta con 7 Ha. de faldeo de serranías y se ubica en el margen este del lago2. El lago Potrero de los Funes es un espejo de agua de 91 hectáreas y una profundidad de 33 metros3. Es posible realizar pesca de carpas y pejerreyes y practicar deportes acuáticos sin motor como windsurf y canotaje3. El circuito de Potrero de los Funes es uno de los más espectaculares del mundo, no solamente por sus características propias como pista de carreras, sino por su construcción, su amplitud y más que nada por su entorno natural con un dibujo original que rodea a un enorme lago.");
+        lt.setFotos(new ArrayList<>(Arrays.asList(R.drawable.potrero1,R.drawable.potrero2,R.drawable.potrero3,R.drawable.potrero4)));
+        lt.setMasInfo(" Potrero de los Funes goza casi todo el año de un clima ameno muy favorable al turismo, especialmente con el atractivo del lago del Embalse Potrero de los Funes, el cual además de ofrecer hermosos paisajes permite la práctica de deportes náuticos y la pesca deportiva. En los meses de verano Potrero de los Funes es el centro del festival de Folclore llamado El Fogón y el Lago, con artistas locales, provinciales y nacionales; siendo este uno de los más reconocidos de la provincia de San Luis.\n" +
+                "\n" +
+                "Con diversos hoteles y cámpines alrededor del Embalse Potrero de los Funes, es uno de los sitios más turísticos de la zona adyacente al Gran San Luis.");
+
+        lista.add(lt);
+
         lista.add(new LugarTuristico("nnombre3","desc3"));
         lista.add(new LugarTuristico("nnombre4","desc4"));
         lista.add(new LugarTuristico("nnombre5","desc5"));

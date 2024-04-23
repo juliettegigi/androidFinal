@@ -3,9 +3,11 @@ package com.softulp.app.exploradordelugarestursticos;
 import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 
@@ -20,11 +22,14 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.softulp.app.exploradordelugarestursticos.databinding.ActivityMainBinding;
+import com.softulp.app.exploradordelugarestursticos.ui.mapa.ConfigurarMapa;
+import com.softulp.app.exploradordelugarestursticos.ui.mapa.MapsFragment;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+    private  ConfigurarMapa cm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         solicitarPermisos();
+
         setSupportActionBar(binding.appBarMain.toolbar);
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
@@ -72,4 +78,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    public void setTipoMapaMain(int mapType) {
+        //MapsFragment mapFragment = (MapsFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+        MapsFragment mapFragment = (MapsFragment) getSupportFragmentManager().findFragmentByTag("MapsFragment");
+        if (mapFragment != null) {
+            if(mapType==2)
+               mapFragment.setTipoMapa(mapType);
+            Log.d("salida","en el setTipoMain");
+        }
+        Log.d("salida","mapFragment es null");
+    }
+
+
 }

@@ -22,4 +22,13 @@
     <style name="Theme.ExploradorDeLugaresTurísticos.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.ExploradorDeLugaresTurísticos.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.MyTheme" parent="Theme.ExploradorDeLugaresTurísticos">
+        <item name="android:fontFamily">@font/signika_negative_semibold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@drawable/textviews</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:gravity">center</item>
+
+    </style>
 </resources>
