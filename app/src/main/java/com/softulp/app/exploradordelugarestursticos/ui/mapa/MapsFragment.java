@@ -126,7 +126,7 @@ vm.getMutableTipoMapa().observe(getViewLifecycleOwner(), new Observer<Integer>()
     @Override
     public void onDestroy() {
         super.onDestroy();
-        getContext().unregisterReceiver(cm);
+        
     }
 
     public  void setTipoMapa(int mapType) {

@@ -90,6 +90,8 @@ public class ConfiguracionFragment extends Fragment {
         binding = null;
     }
 
+
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -149,12 +151,13 @@ public class ConfiguracionFragment extends Fragment {
     }
 
     private void setLocale(String lang) {
+        Log.d("salida","etro");
         Locale locale = new Locale(lang);
         Locale.setDefault(locale);
         Configuration config = new Configuration();
         config.locale = locale;
         getResources().updateConfiguration(config, getResources().getDisplayMetrics());
-
+        Log.d("salida","saliendo");
         // Reinicia la actividad para aplicar los cambios de idioma
         getActivity().recreate();
     }

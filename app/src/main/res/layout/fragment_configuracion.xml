@@ -22,21 +22,21 @@
             android:id="@+id/tvNormal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/mapa_normal"
+            android:text="@string/mapanormal"
             android:theme="@style/Theme.MyTheme" />
 
         <TextView
             android:id="@+id/tvSatelite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sat_lite"
+            android:text="@string/satlite"
             android:theme="@style/Theme.MyTheme" />
 
         <TextView
             android:id="@+id/tvHibrido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/h_brido"
+            android:text="@string/hbrido"
             android:theme="@style/Theme.MyTheme" />
 
         <TextView
